@@ -25,7 +25,7 @@ Please use [EditorConfig plugin](http://editorconfig.org/#download) for your IDE
 ## Layout
 
 - Use separate file for each entity (class, interface, enum) unless it's logically necessary.
-- Don't use **#region** and **#endregion** directives
+- Don't use **#region** and **#endregion** directives. *See [discussion](http://programmers.stackexchange.com/questions/53086/are-regions-an-antipattern-or-code-smell)*
 - Write only one statement/declaration per line.
 - Add at least one blank line between method definitions, property definitions, constructors etc.
 
