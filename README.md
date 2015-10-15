@@ -42,7 +42,7 @@ public class Example
     {
         if (IsActive) 
         {
-            Console.WriteLine(value)'
+            Console.WriteLine(value);
         }
     }
 }
@@ -63,6 +63,9 @@ if (a == "b")
 if (catalogManager == null)  { throw new ArgumentNullException(nameof(catalogManager)); }
 ```
 
+*Skimping on braces might save you a few keystrokes the first time, but the next coder who comes along, adds something to your else clause without noticing the block is missing braces is going to be in for a lot of pain.* See discussions [here](http://programmers.stackexchange.com/questions/2715/should-curly-braces-appear-on-their-own-line) and [here](http://stackoverflow.com/questions/359732/why-is-it-considered-a-bad-practice-to-omit-curly-braces)
+
+
 ## Implicitly Typed Local Variables
 
 - Use `var` wherever it possible instead of explicit type.
@@ -71,7 +74,7 @@ if (catalogManager == null)  { throw new ArgumentNullException(nameof(catalogMan
 ```
 var z = new List<string>();
 ```
-
+*It makes code more readable. When dealing with interfaces, you are emphatically not interested in the type a variable has. See [discussion](http://stackoverflow.com/questions/41479/use-of-var-keyword-in-c-sharp)*
 
 ## Comments
 - Don't comment redundant code, not used code should be removed.
