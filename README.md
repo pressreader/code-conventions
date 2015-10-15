@@ -62,6 +62,16 @@ if (a == "b")
 if (catalogManager == null)  { throw new ArgumentNullException(nameof(catalogManager)); }
 ```
 
+## Implicitly Typed Local Variables
+
+- Use `var` wherever it possible instead of explicit type.
+- Do not include the type of the variable in it's name.
+
+```
+var z = new List<string>();
+```
+
+
 ## Comments
 - Don't comment redundant code, not used code should be removed.
 - Place the comment on a separate line, not at the end of a line of code.
