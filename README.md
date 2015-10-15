@@ -24,8 +24,8 @@ Please use [EditorConfig plugin](http://editorconfig.org/#download) for your IDE
 
 ## Layout
 
-- Use separate file for each entity (class, interface, enum) unless it's logically necessary. *When designing classes we respect the Single Responsibility Principle. Reading code becomes a lot easier if its shape follows its semantics, hence splitting files by class is sensible. See discussions [here](http://stackoverflow.com/questions/144783/c-sharp-classes-in-separate-files) and [here](http://programmers.stackexchange.com/questions/53088/multiple-classes-in-a-single-cs-file-good-or-bad)*
-- Don't use **#region** and **#endregion** directives. *See [discussion](http://programmers.stackexchange.com/questions/53086/are-regions-an-antipattern-or-code-smell)*
+- Use separate file for each entity (class, interface, enum) unless it's logically necessary. *When designing classes we respect the Single Responsibility Principle. Reading code becomes a lot easier if its shape follows its semantics, hence splitting files by class is sensible. See discussions [here](http://stackoverflow.com/questions/144783/c-sharp-classes-in-separate-files) and [here](http://programmers.stackexchange.com/questions/53088/multiple-classes-in-a-single-cs-file-good-or-bad).*
+- Don't use **#region** and **#endregion** directives. *See [discussion](http://programmers.stackexchange.com/questions/53086/are-regions-an-antipattern-or-code-smell).*
 - Write only one statement/declaration per line.
 - Add at least one blank line between method definitions, property definitions, constructors etc.
 
