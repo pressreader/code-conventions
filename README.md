@@ -23,6 +23,7 @@ Please use [EditorConfig plugin](http://editorconfig.org/#download) for your IDE
 
 ## Layout
 
+- Don't use **#region** and **#ednregion** directives
 - Write only one statement/declaration per line.
 - Add at least one blank line between method definitions, property definitions, constructors etc.
 
