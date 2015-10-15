@@ -14,7 +14,7 @@ Coding conventions serve the following purposes:
  
 ## Design Guidelines
 
-All `PressReader` projects should follow [Microsoft Framework Design Guidelines](https://msdn.microsoft.com/en-us/library/ms229042.aspx). In addition to this document we agree to follow coding conventions below.
+All `PressReader` projects should follow [Microsoft Framework Design Guidelines](https://msdn.microsoft.com/en-us/library/ms229042.aspx). In addition to this document we agree to follow coding conventions below. Microsoft Framework Design Guidelines is one [most popular](http://www.marlabs.com/top-seven-coding-standards-and-guideline-documents-cnet-developers) code conventions.
 
 ## Formatting
 
