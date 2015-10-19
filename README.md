@@ -22,6 +22,9 @@ All `PressReader` projects should follow [Microsoft Framework Design Guidelines]
 Use **utf-8** charset for all files in the project. Use **4 space indentation** for *.cs files in the project. 
 Please use [EditorConfig plugin](http://editorconfig.org/#download) for your IDE to automatically set these settings for your project.
 
+*A tab could be a different number of columns depending on your environment, but a space is always one column.
+In terms of how many spaces (or tabs) constitutes indentation, it's more important to be consistent throughout your code than to use any specific tab stop value. According to some research done by folks (who tend to research these kinds of things), 6 spaces obscures reading of the code and makes it harder to read. Similar is the case with 2 spaces. 4 spaces is said to be optimum for reading clarity and understanding the logical hierarchy of a program at a glance. See discussion [here](http://programmers.stackexchange.com/questions/57/tabs-versus-spaces-what-is-the-proper-indentation-character-for-everything-in-e) and [here](http://stackoverflow.com/questions/4802381/why-4-spaces-are-used-as-the-unit-of-indentation-in-java)*
+
 ## Layout
 
 - Use separate file for each entity (class, interface, enum) unless it's logically necessary. *When designing classes we respect the Single Responsibility Principle. Reading code becomes a lot easier if its shape follows its semantics, hence splitting files by class is sensible. See discussions [here](http://stackoverflow.com/questions/144783/c-sharp-classes-in-separate-files) and [here](http://programmers.stackexchange.com/questions/53088/multiple-classes-in-a-single-cs-file-good-or-bad).*
