@@ -69,6 +69,30 @@ if (catalogManager == null)  { throw new ArgumentNullException(nameof(catalogMan
 
 *Skimping on braces might save you a few keystrokes the first time, but the next coder who comes along, adds something to your else clause without noticing the block is missing braces is going to be in for a lot of pain.* See discussions [here](http://programmers.stackexchange.com/questions/2715/should-curly-braces-appear-on-their-own-line) and [here](http://stackoverflow.com/questions/359732/why-is-it-considered-a-bad-practice-to-omit-curly-braces)
 
+## Use C# type keywords in favor of .NET type names
+
+When using a type that has a C# keyword the keyword is used in favor of the .NET type name. For example, these are correct:
+
+```
+public string TrimString(string s) {
+    return string.IsNullOrEmpty(s)
+        ? null
+        : s.Trim();
+}
+
+var intTypeName = nameof(Int32); // can't use C# type keywords with nameof
+```
+
+The following are incorrect:
+
+```
+public String TrimString(String s) {
+    return String.IsNullOrEmpty(s)
+        ? null
+        : s.Trim();
+}
+```
+*There is no diference between `System.String` and `string`, we decided to use `string` for consitentency*
 
 ## Implicitly Typed Local Variables
 
