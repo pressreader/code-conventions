@@ -94,6 +94,31 @@ public String TrimString(String s) {
 ```
 *There is no diference between `System.String` and `string`, we decided to use `string` for consitentency*
 
+## Class members
+
+- Avoid `this.` unless absolutely necessary.
+- Always specify member visiblity, even if it's the default (i.e. `private string foo;` not `string _foo;`).
+- Classes member should be alphabetized, and grouped into sections (Fields, Constructors, Properties, Events, Methods, Private interface implementations, Nested types)
+
+## Use only complete words or common/standard abbreviations in public APIs
+
+Public namespaces, type names, member names, and parameter names must use complete words or common/standard abbreviations.
+
+These are correct:
+
+```
+public void AddReference(AssemblyReference reference);
+public EcmaScriptObject SomeObject { get; }
+```
+
+These are incorrect:
+
+```
+public void AddRef(AssemblyReference ref);
+public EcmaScriptObject SomeObj { get; }
+```
+
+
 ## Implicitly Typed Local Variables
 
 - Use `var` wherever it possible instead of explicit type.
