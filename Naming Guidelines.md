@@ -31,7 +31,7 @@ characters long. For example, use `HtmlButton` rather than `HTMLButton`, but
 example, use `UI` for User Interface and `Html` for Hyper-Text Markup Language.
 
 &#10007; **DO NOT** use underscores, hyphens, or any other non-alphanumeric
-characters. This is not correct: `public string Full_Name { get; }`
+characters. This is incorrect: `public string Full_Name { get; }`
 
 &#10007; **DO NOT** use the Hungarian notation.
 
