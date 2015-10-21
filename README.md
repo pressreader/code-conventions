@@ -64,9 +64,10 @@ if (catalogManager == null)  { throw new ArgumentNullException(nameof(catalogMan
 
 *Skimping on braces might save you a few keystrokes the first time, but the next coder who comes along, adds something to your else clause without noticing the block is missing braces is going to be in for a lot of pain.* See discussions [here](http://programmers.stackexchange.com/questions/2715/should-curly-braces-appear-on-their-own-line) and [here](http://stackoverflow.com/questions/359732/why-is-it-considered-a-bad-practice-to-omit-curly-braces)
 
+
 ## Naming Guidelines
 
-Use [Naming Guidelines](https://github.com/PressReader/code-conventions/blob/master/Naming%20Guidelines.md) document. 
+Please use [Naming Guidelines](https://github.com/PressReader/code-conventions/blob/master/Naming%20Guidelines.md) document. 
 *The document is based on [Microsoft Framework Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx).*
 
 
@@ -95,46 +96,29 @@ public String TrimString(String s) {
 ```
 *There is no diference between `System.String` and `string`, we decided to use `string` for consitentency*
 
+
 ## Class members
 
 - Avoid `this.` unless absolutely necessary.
 - Always specify member visiblity, even if it's the default (i.e. `private string foo;` not `string _foo;`).
 - Classes member should be alphabetized, and grouped into sections:
 
-0. Constant Fields
-0. Fields
-0. Constructors and Finalizers
-0. Delegates and Events
-0. Properties and Indexers
-0. Methods
-0. Nested Structs and Classes
+  * Constant Fields
+  * Fields
+  * Constructors and Finalizers
+  * Delegates and Events
+  * Properties and Indexers
+  * Methods
+  * Nested Structs and Classes
 
 Within each of these groups order by access:
 
-0. public
-0. internal
-0. protected
-0. private
+- public
+- internal
+- protected
+- private
 
 *These are from `StyleCop Rules Documentation`, see [discussion](http://stackoverflow.com/questions/150479/order-of-items-in-classes-fields-properties-constructors-methods)*
-
-## Use only complete words or common/standard abbreviations in public APIs
-
-Public namespaces, type names, member names, and parameter names must use complete words or common/standard abbreviations.
-
-These are correct:
-
-```
-public void AddReference(AssemblyReference reference);
-public EcmaScriptObject SomeObject { get; }
-```
-
-These are incorrect:
-
-```
-public void AddRef(AssemblyReference ref);
-public EcmaScriptObject SomeObj { get; }
-```
 
 
 ## Implicitly Typed Local Variables
@@ -146,6 +130,12 @@ public EcmaScriptObject SomeObj { get; }
 var lines = new List<string>();
 ```
 *It makes code more readable. When dealing with interfaces, you are emphatically not interested in the type a variable has. See [discussion](http://stackoverflow.com/questions/41479/use-of-var-keyword-in-c-sharp)*
+
+
+## Unit tests
+
+Please use [Unit Tests Guidelines](https://github.com/PressReader/code-conventions/blob/master/Unit%20Tests%20Guideline.md) for unit tests.
+
 
 ## Comments
 - Don't comment redundant code, not used code should be removed.
