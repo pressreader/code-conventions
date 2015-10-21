@@ -142,7 +142,7 @@ public EcmaScriptObject SomeObj { get; }
 - Do not include the type of the variable in it's name.
 
 ```
-var z = new List<string>();
+var lines = new List<string>();
 ```
 *It makes code more readable. When dealing with interfaces, you are emphatically not interested in the type a variable has. See [discussion](http://stackoverflow.com/questions/41479/use-of-var-keyword-in-c-sharp)*
 
