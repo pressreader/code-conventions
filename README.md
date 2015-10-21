@@ -12,11 +12,6 @@ Coding conventions serve the following purposes:
 - They enable readers to understand the code more quickly by making assumptions based on previous experience.
 - They facilitate copying, changing, and maintaining the code.
  
-## Design Guidelines
-
-All `PressReader` projects should follow [Microsoft Framework Design Guidelines](https://msdn.microsoft.com/en-us/library/ms229042.aspx). In addition to this document we agree to follow coding conventions below. 
-*Microsoft Framework Design Guidelines is one of [the most popular](http://www.marlabs.com/top-seven-coding-standards-and-guideline-documents-cnet-developers) code conventions.*
-
 ## Formatting
 
 Use **utf-8** charset for all files in the project. Use **4 space indentation** for *.cs files in the project. 
@@ -68,6 +63,12 @@ if (catalogManager == null)  { throw new ArgumentNullException(nameof(catalogMan
 ```
 
 *Skimping on braces might save you a few keystrokes the first time, but the next coder who comes along, adds something to your else clause without noticing the block is missing braces is going to be in for a lot of pain.* See discussions [here](http://programmers.stackexchange.com/questions/2715/should-curly-braces-appear-on-their-own-line) and [here](http://stackoverflow.com/questions/359732/why-is-it-considered-a-bad-practice-to-omit-curly-braces)
+
+## Naming Guidelines
+
+Use [Naming Guidelines](https://github.com/PressReader/code-conventions/blob/master/Naming%20Guidelines.md) document. 
+*The document is based on [Microsoft Framework Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx).*
+
 
 ## Use C# type keywords in favor of .NET type names
 
