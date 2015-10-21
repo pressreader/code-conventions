@@ -98,7 +98,24 @@ public String TrimString(String s) {
 
 - Avoid `this.` unless absolutely necessary.
 - Always specify member visiblity, even if it's the default (i.e. `private string foo;` not `string _foo;`).
-- Classes member should be alphabetized, and grouped into sections (Fields, Constructors, Properties, Events, Methods, Private interface implementations, Nested types)
+- Classes member should be alphabetized, and grouped into sections:
+
+0. Constant Fields
+0. Fields
+0. Constructors and Finalizers
+0. Delegates and Events
+0. Properties and Indexers
+0. Methods
+0. Nested Structs and Classes
+
+Within each of these groups order by access:
+
+0. public
+0. internal
+0. protected
+0. private
+
+*These are from `StyleCop Rules Documentation`, see [discussion](http://stackoverflow.com/questions/150479/order-of-items-in-classes-fields-properties-constructors-methods)*
 
 ## Use only complete words or common/standard abbreviations in public APIs
 
