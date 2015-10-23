@@ -101,7 +101,7 @@ public String TrimString(String s) {
 
 - Avoid `this.` unless absolutely necessary.
 
-DO
+&#10003; **DO**
 ```
 public class Node 
 {
@@ -117,7 +117,7 @@ public class Node
 }
 ```
 
-DON'T
+&#10007; **DO NOT**
 
 ```
 public class Node 
@@ -137,12 +137,12 @@ public class Node
 
 - Always specify member visiblity, even if it's the default
 
-DO
+&#10003; **DO**
 ```
 private string _foo;
 ```
 
-DON'T 
+&#10007; **DO NOT**
 ```
 string _foo
 ```
@@ -172,12 +172,12 @@ Within each of these groups order by access:
 - Use `var` wherever it possible instead of explicit type.
 - Do not include the type of the variable in it's name.
 
-DO
+&#10003; **DO**
 ```
 var lines = new List<string>();
 ```
 
-DON'T
+&#10007; **DO NOT**
 ```
 List<string> listOfLinesString = new List<string>();
 ```
