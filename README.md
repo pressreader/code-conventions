@@ -103,34 +103,18 @@ public String TrimString(String s) {
 
 &#10003; **DO**
 ```
-public class Node 
+public UserController(IUserSettingsRepository userSettingsRepository)
 {
-    private string _name;
-    
-    public string Name 
-    {
-       get 
-       {
-          return _name;
-       }
-    }
+    _userSettingsRepository = userSettingsRepository;
 }
 ```
 
 &#10007; **DO NOT**
 
 ```
-public class Node 
+public UserController(IUserSettingsRepository userSettingsRepository)
 {
-    private string _name;
-    
-    public string Name 
-    {
-       get 
-       {
-          return this._name;
-       }
-    }
+    this._userSettingsRepository = userSettingsRepository;
 }
 ```
 
