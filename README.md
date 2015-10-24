@@ -128,7 +128,7 @@ private string _foo;
 
 &#10007; **DO NOT**
 ```
-string _foo
+string _foo;
 ```
 
 - Classes member should be alphabetized, and grouped into sections:
