@@ -17,17 +17,10 @@ public string Full__name { get; }
 
 ```CSharp
 new Timer((_) => DownloadNewspapersInfo(), null, null);
-
-try {
-    return new window.ActiveXObject("Msxml2.XMLHTTP.6.0");
-} catch (_) {
-....
-}
+task.ContinueWith((_) => _activeTasks.Release());
 ```
 
-
-&#10003; **DO** use camelCasing (capitalize first letters of each word except
-for the first word) and add **underscore**  for private fields.
+&#10003; **DO** use camelCasing (capitalize first letters of each word except for the first word) and add **underscore** to private fields.
 
 ```CSharp
 private bool _isActive;
@@ -51,8 +44,6 @@ characters long. For example, use `HtmlButton` rather than `HTMLButton`, but
 public bool bIsActive { get; }
 public bool objValue { get; }
 ```
-
-&#10003; **DO** name types and properties with nouns or noun phrases.
 
 &#10003; **DO** use the following prefixes:
 * `I` for interfaces.
