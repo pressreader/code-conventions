@@ -8,7 +8,7 @@
 ## Why do we need this
 
 Coding conventions serve the following purposes:
-- They create a consistent look to the code, so that reeaders can focus on content, not layout.
+- They create a consistent look to the code, so that readers can focus on content, not layout.
 - They enable readers to understand the code more quickly by making assumptions based on previous experience.
 - They facilitate copying, changing, and maintaining the code.
  
