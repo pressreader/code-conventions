@@ -13,7 +13,18 @@ public string Full_Name { get; }
 public string Full__name { get; }
 ```
 
-&#10007; **DO NOT** use underscore as 
+&#10007; **DO NOT** use underscore as variable name. This is incorrect:
+
+```CSharp
+new Timer((_) => DownloadNewspapersInfo(), null, null);
+
+try {
+    return new window.ActiveXObject("Msxml2.XMLHTTP.6.0");
+} catch (_) {
+....
+}
+```
+
 
 &#10003; **DO** use camelCasing (capitalize first letters of each word except
 for the first word) and add **underscore**  for private fields.
