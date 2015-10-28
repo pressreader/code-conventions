@@ -52,7 +52,7 @@ public class Example
 ```C#
 if (a == "b") 
 {
-    Consloe.WriteLine("A equals to B");
+    Console.WriteLine("A equals to B");
     return;
 }
 ```
@@ -100,7 +100,37 @@ public String TrimString(String s) {
 ## Class members
 
 - Avoid `this.` unless absolutely necessary.
-- Always specify member visiblity, even if it's the default (i.e. `private string foo;` not `string _foo;`).
+
+&#10003; **DO**
+```
+public UserController(IUserSettingsRepository userSettingsRepository)
+{
+    _userSettingsRepository = userSettingsRepository;
+}
+```
+
+&#10007; **DO NOT**
+
+```
+public UserController(IUserSettingsRepository userSettingsRepository)
+{
+    this._userSettingsRepository = userSettingsRepository;
+}
+```
+
+
+- Always specify member visiblity, even if it's the default
+
+&#10003; **DO**
+```
+private string _foo;
+```
+
+&#10007; **DO NOT**
+```
+string _foo;
+```
+
 - Classes member should be alphabetized, and grouped into sections:
 
   * Constant Fields
@@ -126,9 +156,16 @@ Within each of these groups order by access:
 - Use `var` wherever it possible instead of explicit type.
 - Do not include the type of the variable in it's name.
 
+&#10003; **DO**
 ```
 var lines = new List<string>();
 ```
+
+&#10007; **DO NOT**
+```
+List<string> listOfLinesString = new List<string>();
+```
+
 *It makes code more readable. When dealing with interfaces, you are emphatically not interested in the type a variable has. See [discussion](http://stackoverflow.com/questions/41479/use-of-var-keyword-in-c-sharp)*
 
 
