@@ -189,12 +189,25 @@ public interface ISessionChannel<TSession> where TSession : ISession
 &#10003; **DO** use the following postfixes:
 
 * `Exception` for types inheriting from `System.Exception`.
+* `Attribute` for types inheriting from `System.Attribute`.
+* `Async` for async methods (excluding WEB API actions)
+
+Examples:
+```Csharp
+public class PressReaderSecurityException: Exception {}
+
+public class ValidationAttribute : Attribute {}
+
+public Task DeleteMessageAsync(AzureQueueMessage<T> message) {}
+
+public async Task<IHttpActionResult> GetUserContent(string token)  {}
+```
+
+
+&#10003; **Consider** using the following postfixes:
 * `Collection` for types implementing `IEnumerable`.
 * `Dictionary` for types implementing `IDictionary` or `IDictionary<K,V>`.
-* `EventArgs` for types inheriting from `System.EventArgs`.
-* `EventHandler` for types inheriting from `System.Delegate`.
-* `Attribute` for types inheriting from `System.Attribute`.
-* `Async` for async methods.
+
 
 &#10007; **DO NOT** postfix type names with `Flags` or `Enum`. This is incorrect:
 
