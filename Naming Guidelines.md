@@ -1,6 +1,6 @@
 # Naming Guidelines
 
-&#10003; **DO** use PascalCasing (capitalize the first letter of each word) for all identifiers except parameter names. 
+&#10003; **DO** use PascalCasing (capitalize the first letter of each word) for all identifiers except parameter names, local variables and private fields. See [Example](https://github.com/PressReader/code-conventions/blob/5-naming-protected/Sample.cs)
 
 ```Csharp
 public string FirstName { get; }
